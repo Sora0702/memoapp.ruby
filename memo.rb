@@ -14,7 +14,7 @@ end
 
 if memo_type == 1
   puts "拡張子を除いたファイル名を入力してください。"
-  create_file = gets.to_s
+  create_file = gets.chomp.to_s
   puts "メモしたい内容を入力してください。"
   puts "完了したらCtrl + Dを押します。"
   contents = readlines
@@ -25,7 +25,7 @@ if memo_type == 1
   end
 elsif memo_type == 2
   puts "編集したいファイルの拡張子を除いたファイル名を入力してください。"
-  edit_file = gets.to_s
+  edit_file = gets.chomp.to_s
   puts "メモしたい内容を入力してください。"
   puts "完了したらCtrl + Dを押します。"
   add_contents = readlines
